@@ -2,7 +2,7 @@
 
 | Wersja Ruby   | Wersja Rails  |                Baza danych                 | Framework |           Dodatkowe gemy           |
 | ------------- |:-------------:|:-------------------------------------------|:---------:|:----------------------------------:|
-| 2.3.1         | 4.2.7.1         | SQLite - lokalnie<br />PostgreSQL - Heroku | Bootstrap | Redcarpet         |
+| 2.3.1         | 4.2.7.1         | SQLite - lokalnie<br />PostgreSQL - Heroku | Bootstrap | Redcarpet oraz devise         |
 
 
 [Link do aplikacji](https://asii1.herokuapp.com/)
@@ -14,3 +14,4 @@ Aplikacja umożliwiająca dodawanie, edytowanie, usuwanie i przeglądanie przedm
 ### Gemy:<br/>
 
 - Redcarpet - Autolink w description przedmiotu
+- Devise
