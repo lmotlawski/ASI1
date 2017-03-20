@@ -13,5 +13,4 @@ Aplikacja umożliwiająca dodawanie, edytowanie, usuwanie i przeglądanie przedm
 
 ### Gemy:<br/>
 
-- Redcarpet - znaczniki Markdown w opisie strony
-
+- Redcarpet - Autolink w description przedmiotu
