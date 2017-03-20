@@ -1,9 +1,9 @@
-## Arkadiusz Półgęsek (zaliczenie)
+## Łukasz Motławski - projekt na zaliczenie.
 
-| Wersja Ruby   | Wersja Rails  |                Baza danych                 | Framework |           Dodatkowe gemy           |
-| ------------- |:-------------:|:-------------------------------------------|:---------:|:----------------------------------:|
-| 2.3.1         | 4.2.7.1       | PostgreSQL - Heroku                        | Bootstrap | Redcarpet                          |
-
+Wersja Ruby: 2.3.1.
+Wersja Rails: 4.2.7.1.
+Baza danych: PostgreSQL - Heroku / SQLite - lokalnie.
+Framework: Bootstrap.
 
 [Link do aplikacji](https://asii1.herokuapp.com/)
 
