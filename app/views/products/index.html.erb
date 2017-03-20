@@ -9,7 +9,9 @@
 	<nav class="navbar navbar-default navbar-fixed-top">
 		<div class="container">
 			<div class="navbar-header">
-			
+				<ul class="nav navbar-nav navbar-right">
+					<li><%= link_to "Computer Shop", products_path, :class => 'navbar-link'  %></li>
+				</ul>
 			</div>
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav navbar-right">
@@ -60,13 +62,13 @@
 
 			  <tbody>
 				<% @products.each do |product| %>
-				  <tr class="accTR">
-					<td class="accTD"><%= product.firm %></td>
-					<td class="accTD"><%= product.model %></td>
-					<td class="accTD"><%= product.description %></td>
-					<td class="accTD"><%= link_to 'Show', product %></td>
-					<td class="accTD"><%= link_to 'Edit', edit_product_path(product) %></td>
-					<td class="accTD"><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+				  <tr class="prTR">
+					<td class="prTD"><%= product.firm %></td>
+					<td class="prTD"><%= product.model %></td>
+					<td class="prTD"><%= markdown product.description %></td>
+					<td class="prTD"><%= link_to 'Show', product %></td>
+					<td class="prTD"><%= link_to 'Edit', edit_product_path(product) %></td>
+					<td class="prTD"><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
 				  </tr>
 				<% end %>
 			  </tbody>

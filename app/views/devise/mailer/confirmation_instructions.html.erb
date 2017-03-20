@@ -46,21 +46,9 @@
 			</br>
 			</br>
 			</br>
-			<p id="notice"><%= notice %></p>
-			<p>
-			  <strong>Firm:</strong>
-			  <%= @product.firm %>
-			</p>
-			<p>
-			  <strong>Model:</strong>
-			  <%= @product.model %>
-			</p>
-			<p>
-			  <strong>Description:</strong>
-			  <%= markdown @product.description %>
-			</p>
-			<%= link_to 'Edit', edit_product_path(@product) %> |
-			<%= link_to 'Back', products_path %>
+			<p>Welcome <%= @email %>!</p>
+			<p>You can confirm your account email through the link below:</p>
+			<p><%= link_to 'Confirm my account', confirmation_url(@resource, confirmation_token: @token) %></p>
 		</div>	
 	</div>
 </body>

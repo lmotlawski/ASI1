@@ -1,5 +1,54 @@
-<h1>New Product</h1>
-
-<%= render 'form' %>
-
-<%= link_to 'Back', products_path %>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sklep komputerowy</title>
+	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+	<%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
+<body>
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<ul class="nav navbar-nav navbar-right">
+					<li><%= link_to "Computer Shop", products_path, :class => 'navbar-link'  %></li>
+				</ul>
+			</div>
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav navbar-right">
+				<% if user_signed_in? %>
+					<li>Logged in as <strong><%= current_user.email %></strong>.</li>
+					<li><%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %></li>
+					<li><%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %></li>
+				<% else %>
+					<li><%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> </li>
+					<li><%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %></li>
+				<% end %>
+				</ul>
+			</div>	
+		</div>
+	</nav>
+	
+	<div class="container">
+		<div class="col-sm-3">
+			<br/>
+<br/>
+<br/>
+			<div class="panel panel-default" style="margin-top: 20px;">
+				<div class="panel-heading">
+					Opcje
+				</div>
+				<ul class="nav nav-pills nav-stacked" style="margin: 0">
+					<li role="presentation"><%= link_to "Show products", products_path, :class => 'navbar-link'  %></li>
+				</ul>
+			</div>
+		</div>	
+		<div class="col-sm-9 padding-top">
+			</br>
+			</br>
+			</br>
+			<h1>New Product</h1>
+			<%= render 'form' %>
+			<%= link_to 'Back', products_path %>
+		</div>	
+	</div>
+</body>
